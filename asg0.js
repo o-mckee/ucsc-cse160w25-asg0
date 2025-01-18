@@ -18,9 +18,8 @@ function main() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);        // Fill a rectangle with the color
 
 
-  var v1 = new Vector3([45, 45, 0.0]);
+  var v1 = new Vector3([2.25, 2.25, 0.0]);
   
-  console.log(v1.elements[0]);
   drawVector(v1, 'red');
 }
 
@@ -84,19 +83,16 @@ function handleDrawOperationEvent(){
   
   if (oper == "add") {
 
-    console.log("addition");
     var vec3 = vec1.add(vec2);
     drawVector(vec3, 'green');
 
   } else if (oper == "subtract") {
 
-    console.log("subtraction");
     var vec3 = vec1.sub(vec2);
     drawVector(vec3, 'green');
 
   } else if (oper == "multiply") {
 
-    console.log("multiplication");
     var vec3 = vec1.mul(scalar);
     var vec4 = vec2.mul(scalar);
 
@@ -105,7 +101,6 @@ function handleDrawOperationEvent(){
 
   } else if (oper == "divide") {
 
-    console.log("division");
     var vec3 = vec1.div(scalar);
     var vec4 = vec2.div(scalar);
 
